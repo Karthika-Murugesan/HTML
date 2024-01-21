@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: bisque;
+            margin: 10%;
+        }
+
+        .item {
+            background-color: aquamarine;
+            padding: 5%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: chocolate;
+        }
+
+        .grid-item {
+            background-color: bisque;
+            color: black;
+            border: 5px solid black;
+        }
+
+        @media screen and (min-width: 475px) {
+            .grid-container {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+                background-color: rgb(10,10,10);
+                padding:10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">05</div>
+        <div class="item">06</div>
+        <div class="item">07</div>
+        <div class="item">08</div>
+        <div class="item">09</div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">01</div>
+        <div class="grid-item">02</div>
+        <div class="grid-item">03</div>
+        <div class="grid-item">04</div>
+        <div class="grid-item">05</div>
+        <div class="grid-item">06</div>
+        <div class="grid-item">07</div>
+        <div class="grid-item">08</div>
+        <div class="grid-item">09</div>
+    </div>
+</body>
+
+</html>
