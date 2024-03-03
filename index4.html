@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+       <style>
+        form{
+            text-align:center;
+            color:rgb(224, 56, 56);
+            font-size: 150%;
+            
+
+            select{
+                background-color: antiquewhite;
+            }
+        }
+       </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;color:brown;background-color: bisque;border:3px dotted black">Registration form</h1><br><br>
+        <form style="background-color: blanchedalmond;">
+            <fieldset>
+            <legend>Personal Information</legend><br>
+
+            <label for="fname">First Name : </label>
+            <input type="text" style="background-color: antiquewhite;"><br><br>
+            <label for="lname">Last Name : </label>
+            <input type="text"  style="background-color: antiquewhite;"><br><br>
+            <label for="email">Email  Id: </label>
+            <input type="email" style="background-color: antiquewhite;"><br><br>
+
+            <label for="Gender">Gender: </label>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female<br><br>
+                
+            <label for="dropdown">Department: </label>
+            <select name="Department">
+                <option value="" disabled selected hidden >Select department</option>
+                <option value="CSD">CSD</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+            </select><br><br>
+            
+            <label for="Year">Year: </label>
+            <input type="radio" name="Year">1
+            <input type="radio" name="Year">2
+            <input type="radio" name="Year">3
+            <input type="radio" name="Year">4
+
+            <br><br>
+
+            <label for="checkbox">Favorite Subject : </label>
+            <input type="checkbox">Computer networks
+            <input type="checkbox">Operating System
+            <input type="checkbox">Computer Organization
+            <br><br>
+            <input type="submit" style="background-color: rgb(43, 255, 117);">
+            <input type="reset" style="background-color: rgb(217, 24, 24);color: white;"> 
+            </fieldset>
+       </form>
+    </body>
+</html>
